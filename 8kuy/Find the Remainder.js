@@ -18,6 +18,3 @@ function remainder(a, b) {
 
 const a = 8;
 const b = 4;
-
-const result = remainder(a, b);
-console.log(`Остаток от деления большего числа на меньшее: ${result}`);
