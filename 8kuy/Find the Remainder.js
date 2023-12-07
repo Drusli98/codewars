@@ -4,17 +4,19 @@
 // Division by zero should return NaN.
 
 // Solution:
-
-function remainder(a, b) {
-  if (b == 0) {
-    return NaN;
+function remainder(n, m) {
+  if (m === 0) {
+    return NaN; // Деление на ноль возвращает NaN
   }
-  const larger = Math.max(a, b);
-  const smaller = Math.min(a, b);
 
-  const answer = larger % smaller;
-  return answer;
+  const larger = Math.max(n, m);
+  const smaller = Math.min(n, m);
+
+  return larger % smaller; // Возвращаем остаток от деления большего на меньшее
 }
 
-const a = 8;
-const b = 4;
+// Примеры использования функции
+console.log(remainder(17, 5)); // Ожидаемый результат: 2
+console.log(remainder(13, 72)); // Ожидаемый результат: 7
+console.log(remainder(0, -1)); // Ожидаемый результат: 0
+console.log(remainder(0, 1)); // Ожидаемый результат: NaN
