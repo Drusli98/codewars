@@ -6,7 +6,7 @@
 // Solution:
 function remainder(n, m) {
   if (m === 0) {
-    return NaN; // Деление на ноль возвращает NaN
+    return NaN; // ДелеSние на ноль возвращает NaN
   }
 
   const larger = Math.max(n, m);
